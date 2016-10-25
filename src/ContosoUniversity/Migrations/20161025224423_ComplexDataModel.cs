@@ -99,8 +99,7 @@ namespace ContosoUniversity.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "EnrollmentID",
                 table: "Enrollments",
-                nullable: false,
-                defaultValue: 0)
+                nullable: false)
                 .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             migrationBuilder.Sql("INSERT INTO dbo.Departments (Name, Budget, StartDate) VALUES ('Temp', 0.00, GETDATE())");
